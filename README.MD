@@ -18,6 +18,21 @@ The new features that this repository brings are:
 - **Option to generate masks from videos with [MODNet: Trimap-Free Portrait Matting in Real Time](#modnet)**
 - **Experimental Windows support. (Need to disable ``MaskRCNN`` detectron2 feature and use ``MODNet`` to do mask extraction)**
 
+## Demo Projects
+This repository contains 7 demo projects to better understand the algorithm's operation and capabilities. These projects can be downloaded in ZIP format from this [google drive link](https://drive.google.com/file/d/1OwTvo2UuZHqd1yqTvTWgobqTjntrTxkh/view?usp=sharing).
+
+After downloading, just extract the contents of the ZIP file and copy the files to the ``projects`` folder like this:
+
+```
+projects
+├── bear           
+├── blackswan
+├── lucia_multi       
+├── lucia_single     
+├── mallard_water    
+├── paragliding   
+└── surf
+```
 
 ## Installation
 The installation process is the same as the official repository. The code was tested with python 3.7 and pytorch 1.6. but it may work with other versions.
