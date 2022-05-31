@@ -34,6 +34,13 @@ projects
 └── surf
 ```
 
+|                   | Original                                                     | Edited                                                              |
+|:-----------------:|--------------------------------------------------------------|---------------------------------------------------------------------|
+|   **Blackswan**   | <img src="assets/blackswan/blackswan.gif" height="100"/>     | <img src="assets/blackswan/blackswan_edited.gif" height="100"/>     |
+|  **Paragliding**  | <img src="assets/paragliding/paragliding.gif" height="100"/> | <img src="assets/paragliding/paragliding_edited.gif" height="100"/> |
+|     **Surf**      | <img src="assets/surf/surf.gif" height="100"/>               | <img src="assets/surf/surf_edited.gif" height="100"/>               |
+
+
 ## Installation
 The installation process is the same as the official repository. The code was tested with python 3.7 and pytorch 1.6. but it may work with other versions.
 
@@ -124,6 +131,14 @@ Or simply by editing the ``foreground_layers`` property inside any configuration
 
 **Note:** For better results when using the Multi Layer Foreground Atlases feature, you can add
 scribbles files to the ``scribbles`` directory of the selected project.
+Examples of how to add scribbles to your project can be found in ``lucia_multi`` demo project.
+
+An example of how much better the results can be when using this feature:
+
+|                   Multi Foreground Atlases                    |                    Single Foreground Atlas                     | 
+|:-------------------------------------------------------------:|:--------------------------------------------------------------:|
+| <img src="assets/lucia/multi_layer_result.jpg" height="100"/> | <img src="assets/lucia/single_layer_result.jpg" height="100"/> |
+
 
 ### Evaluating
 When a trained model is available, you can run the ``evaluation.py`` script to generate debugging files and visualize the performance of the algorithm on project.
@@ -147,6 +162,13 @@ python generate_atlases.py -p hello_world -cf 00000.png
 ```
 - ``-p (--project)``: Select which project to load the models that will be used (**Required**)
 - ``-cf (--custom_frame)``: Path to an edited video frame that will be used to generate atlases (**Optional**)
+
+Example of generated atlases for the ``surf`` demo project:
+
+| Background Atlas                                           | Foreground Atlas                                             | 
+|------------------------------------------------------------|--------------------------------------------------------------|
+| <img src="assets/surf/background_atlas.png" height="200"/> | <img src="assets/surf/foreground_atlas_0.png" height="200"/> |
+
 
 To generate atlases with enabled animation support you only need to add the ``-a`` argument to the command line.
 ```bash
@@ -173,7 +195,7 @@ animated_atlases          # Animated atlases directory
     └── ...
 ```
 
-### Rendering Video
+### Rendering a Video
 And finally, after editing the generated atlases in an image/video editing software (e.g. Photoshop or Premiere),
 you can use the ``render_video.py`` script to render the original video with your own edits.
 
@@ -203,6 +225,12 @@ python render_video.py -r {foreground/background} -o output.mp4
 - ``-r (--remove)``: Layer to remove from output video. (``foreground`` or ``background``)
 
 **Note:** If neither an atlas file, nor the ``-r (--remove)`` argument is passed to the script ``render_video.py``, it will result in a copy of the original video.
+
+Example of background removal on ``paragliding`` demo project:
+
+| Original                                                     | w/o Background                                                             | 
+|--------------------------------------------------------------|----------------------------------------------------------------------------|
+| <img src="assets/paragliding/paragliding.gif" height="100"/> | <img src="assets/paragliding/paragliding_no_foreground.gif" height="100"/> |
 
 ## Citation
 If you find their work useful in your research, please consider citing:
