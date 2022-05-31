@@ -36,9 +36,9 @@ projects
 
 |                   | Original                                                     | Edited                                                              |
 |:-----------------:|--------------------------------------------------------------|---------------------------------------------------------------------|
-|   **Blackswan**   | <img src="assets/blackswan/blackswan.gif" height="100"/>     | <img src="assets/blackswan/blackswan_edited.gif" height="100"/>     |
-|  **Paragliding**  | <img src="assets/paragliding/paragliding.gif" height="100"/> | <img src="assets/paragliding/paragliding_edited.gif" height="100"/> |
-|     **Surf**      | <img src="assets/surf/surf.gif" height="100"/>               | <img src="assets/surf/surf_edited.gif" height="100"/>               |
+|   **Blackswan**   | <img src="assets/blackswan/blackswan.gif" width="200"/>     | <img src="assets/blackswan/blackswan_edited.gif" width="200"/>     |
+|  **Paragliding**  | <img src="assets/paragliding/paragliding.gif" width="200"/> | <img src="assets/paragliding/paragliding_edited.gif" width="200"/> |
+|     **Surf**      | <img src="assets/surf/surf.gif" width="200"/>               | <img src="assets/surf/surf_edited.gif" width="200"/>               |
 
 
 ## Installation
@@ -137,7 +137,7 @@ An example of how much better the results can be when using this feature:
 
 |                   Multi Foreground Atlases                    |                    Single Foreground Atlas                     | 
 |:-------------------------------------------------------------:|:--------------------------------------------------------------:|
-| <img src="assets/lucia/multi_layer_result.jpg" height="100"/> | <img src="assets/lucia/single_layer_result.jpg" height="100"/> |
+| <img src="assets/lucia/multi_layer_result.jpg" width="100"/> | <img src="assets/lucia/single_layer_result.jpg" width="100"/> |
 
 
 ### Evaluating
@@ -167,7 +167,7 @@ Example of generated atlases for the ``surf`` demo project:
 
 | Background Atlas                                           | Foreground Atlas                                             | 
 |------------------------------------------------------------|--------------------------------------------------------------|
-| <img src="assets/surf/background_atlas.png" height="200"/> | <img src="assets/surf/foreground_atlas_0.png" height="200"/> |
+| <img src="assets/surf/background_atlas.png" width="200"/> | <img src="assets/surf/foreground_atlas_0.png" width="200"/> |
 
 
 To generate atlases with enabled animation support you only need to add the ``-a`` argument to the command line.
@@ -230,7 +230,7 @@ Example of background removal on ``paragliding`` demo project:
 
 | Original                                                     | w/o Background                                                             | 
 |--------------------------------------------------------------|----------------------------------------------------------------------------|
-| <img src="assets/paragliding/paragliding.gif" height="100"/> | <img src="assets/paragliding/paragliding_no_foreground.gif" height="100"/> |
+| <img src="assets/paragliding/paragliding.gif" width="200"/> | <img src="assets/paragliding/paragliding_no_foreground.gif" width="200"/> |
 
 ## Citation
 If you find their work useful in your research, please consider citing:
