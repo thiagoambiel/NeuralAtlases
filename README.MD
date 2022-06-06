@@ -2,7 +2,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2109.11418v1-b31b1b.svg?style=for-the-badge)](https://arxiv.org/abs/2109.11418v1)
 
-Based on the [official implementation](https://github.com/ykasten/layered-neural-atlases) from Yoni Kasten of the paper [Layered Neural Atlases for Consistent Video Editing](https://arxiv.org/abs/2109.11418v1), this repository brings some improvements in readability, performance and some new features to this amazing algorithm.
+Based on the [official implementation](https://github.com/ykasten/layered-neural-atlases) from Yoni Kasten of the paper [Layered Neural Atlases for Consistent Video Editing](https://arxiv.org/abs/2109.11418v1), this repository brings some improvements in performance and some new features to this amazing algorithm.
 
 The paper introduces the first approach for neural video unwrapping using an end-to-end optimized interpretable and semantic atlas-based representation, which facilitates easy and intuitive editing in the atlas domain.
 
@@ -17,8 +17,7 @@ The new features that this repository brings are:
 - **Paper's [Multi Layer Foreground](#multi-layer-foreground-atlases) Atlases feature support. (Thanks to [Yoni Kasten](https://github.com/ykasten/layered-neural-atlases/issues/6))**
 - **Support to [Animated Atlases](#generating-atlases).**
 - **[Remove Video Foreground or Background Layers](#removing-foreground--background).**
-- **Refactored code. (Better readability and understanding of the algorithm)** 
-- **Some performance improvements.**
+- **Refactored code and some performance improvements.**
 - **More intuitive and easier to use interface.**
 - **Option to generate masks from videos with [MODNet: Trimap-Free Portrait Matting in Real Time](#modnet)**
 - **Experimental Windows support. (Need to disable ``MaskRCNN`` detectron2 feature and use ``MODNet`` to do mask extraction)**
