@@ -14,7 +14,7 @@ The paper introduces the first approach for neural video unwrapping using an end
 ## New Features
 The new features that this repository brings are:
 
-- **Paper's [Multi Layer Foreground](#multi-layer-foreground-atlases) Atlases feature support. (Thanks to [Yoni Kasten](https://github.com/ykasten/layered-neural-atlases/issues/6))**
+- **Paper's [Multi Layer Foreground Atlases](#multi-layer-foreground-atlases) feature support. (Thanks to [Yoni Kasten](https://github.com/ykasten/layered-neural-atlases/issues/6))**
 - **Support to [Animated Atlases](#generating-atlases).**
 - **[Remove Video Foreground or Background Layers](#removing-foreground--background).**
 - **Refactored code and some performance improvements.**
