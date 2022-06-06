@@ -6,6 +6,11 @@ Based on the [official implementation](https://github.com/ykasten/layered-neural
 
 The paper introduces the first approach for neural video unwrapping using an end-to-end optimized interpretable and semantic atlas-based representation, which facilitates easy and intuitive editing in the atlas domain.
 
+![](assets/flowchart.png)
+<p align="center">
+  <b>Figure 1:</b> Algorithm Flowchart.
+</p>
+
 ## New Features
 The new features that this repository brings are:
 
