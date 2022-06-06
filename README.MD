@@ -38,15 +38,15 @@ projects
 └── surf
 ```
 
-|                   | Original                                                     | Edited                                                              |
-|:-----------------:|--------------------------------------------------------------|---------------------------------------------------------------------|
-|   **Blackswan**   | <img src="assets/blackswan/blackswan.gif" width="200"/>     | <img src="assets/blackswan/blackswan_edited.gif" width="200"/>     |
-|  **Paragliding**  | <img src="assets/paragliding/paragliding.gif" width="200"/> | <img src="assets/paragliding/paragliding_edited.gif" width="200"/> |
-|     **Surf**      | <img src="assets/surf/surf.gif" width="200"/>               | <img src="assets/surf/surf_edited.gif" width="200"/>               |
+|                 | Original                                                    | Edited                                                             |
+|:---------------:|-------------------------------------------------------------|--------------------------------------------------------------------|
+|  **Blackswan**  | <img src="assets/blackswan/blackswan.gif" width="200"/>     | <img src="assets/blackswan/blackswan_edited.gif" width="200"/>     |
+| **Paragliding** | <img src="assets/paragliding/paragliding.gif" width="200"/> | <img src="assets/paragliding/paragliding_edited.gif" width="200"/> |
+|    **Surf**     | <img src="assets/surf/surf.gif" width="200"/>               | <img src="assets/surf/surf_edited.gif" width="200"/>               |
 
 
 ## Installation
-The installation process is the same as the official repository. The code was tested with python 3.7 and pytorch 1.6. but it may work with other versions.
+The installation process is the same as the official repository. If you already used the original version, skip this step. The code was tested with python 3.7 and pytorch 1.6. but it may work with other versions.
 
 You can create an anaconda environment called ``neural_atlases`` with the required dependencies by running:
 ```bash
@@ -139,8 +139,8 @@ Examples of how to add scribbles to your project can be found in ``lucia_multi``
 
 An example of how much better the results can be when using this feature:
 
-|                   Multi Foreground Atlases                    |                    Single Foreground Atlas                     | 
-|:-------------------------------------------------------------:|:--------------------------------------------------------------:|
+|                   Multi Foreground Atlases                   |                    Single Foreground Atlas                    | 
+|:------------------------------------------------------------:|:-------------------------------------------------------------:|
 | <img src="assets/lucia/multi_layer_result.jpg" width="100"/> | <img src="assets/lucia/single_layer_result.jpg" width="100"/> |
 
 
@@ -169,8 +169,8 @@ python generate_atlases.py -p hello_world -cf 00000.png
 
 Example of generated atlases for the ``surf`` demo project:
 
-| Background Atlas                                           | Foreground Atlas                                             | 
-|------------------------------------------------------------|--------------------------------------------------------------|
+| Background Atlas                                          | Foreground Atlas                                            | 
+|-----------------------------------------------------------|-------------------------------------------------------------|
 | <img src="assets/surf/background_atlas.png" width="200"/> | <img src="assets/surf/foreground_atlas_0.png" width="200"/> |
 
 
@@ -232,8 +232,8 @@ python render_video.py -r {foreground/background} -o output.mp4
 
 Example of background removal on ``paragliding`` demo project:
 
-| Original                                                     | w/o Background                                                             | 
-|--------------------------------------------------------------|----------------------------------------------------------------------------|
+| Original                                                    | w/o Background                                                            | 
+|-------------------------------------------------------------|---------------------------------------------------------------------------|
 | <img src="assets/paragliding/paragliding.gif" width="200"/> | <img src="assets/paragliding/paragliding_no_foreground.gif" width="200"/> |
 
 ## Citation
