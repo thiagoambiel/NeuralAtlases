@@ -126,15 +126,17 @@ It can also be enabled through the ``foreground_class`` parameter in a configura
 **Note:** The ``MODNet`` algorithm works better with videos that contains humans.
 
 ### Multi Layer Foreground Atlases
-The **Multi Layer Foreground Atlases** feature can be enabled through the configuration file `multi_layer.json`:
+The Multi Layer Foreground Atlases feature can be enabled through the configuration file `multi_layer.json`:
 ```bash
 python train.py -p hello_world -s 300000 -c ./configs/multi_layer.json
 ```
 
 Or simply by editing the ``foreground_layers`` property inside any configuration file to an integer value bigger than ``1``.
 
-**Note:** For better results when using the Multi Layer Foreground Atlases feature, you can add
-scribbles files to the ``scribbles`` directory of the selected project.
+**Note:** For better results when using this feature, add scribbles 
+files to the ``scribbles`` directory of the selected project. 
+In this way, you will guide the algorithm, informing which pixels will be mapped to each layer.
+
 Examples of how to add scribbles to your project can be found in ``lucia_multi`` demo project.
 
 An example of how much better the results can be when using this feature:
