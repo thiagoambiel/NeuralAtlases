@@ -224,7 +224,7 @@ python render_video.py -p hello_world -f animated_foreground_atlas -b background
 ```
 
 ### Removing Foreground / Background
-As mentioned in the article, it is also possible to remove the foreground and background from the video by manipulating the **alpha** variable in the pixel reconstruction formula. This effect can be easily achieved by running:
+As mentioned in the paper, it is also possible to remove the foreground and background from the video by manipulating the **alpha** variable in the pixel reconstruction formula. This effect can be easily achieved by running:
 ```bash
 python render_video.py -r {foreground/background} -o output.mp4
 ```
@@ -232,9 +232,9 @@ python render_video.py -r {foreground/background} -o output.mp4
 
 **Note:** If neither an atlas file, nor the ``-r (--remove)`` argument is passed to the script ``render_video.py``, it will result in a copy of the original video.
 
-Example of background removal on ``paragliding`` demo project:
+Example of foreground removal on ``paragliding`` demo project:
 
-| Original                                                    | w/o Background                                                            | 
+| Original                                                    | w/o Foreground                                                            | 
 |-------------------------------------------------------------|---------------------------------------------------------------------------|
 | <img src="assets/paragliding/paragliding.gif" width="200"/> | <img src="assets/paragliding/paragliding_no_foreground.gif" width="200"/> |
 
